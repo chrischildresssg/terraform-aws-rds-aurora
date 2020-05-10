@@ -4,6 +4,12 @@ variable "create_security_group" {
   default     = true
 }
 
+variable "create" {
+  description = "Allow conditional creation of RDS cluster"
+  type        = bool
+  default     = true
+}
+
 variable "name" {
   description = "Name given resources"
   type        = string
